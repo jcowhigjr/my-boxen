@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-
+#ruby '1.8.7'
 gem "boxen", :git => 'git://github.com/boxen/boxen.git'
 gem "open4", "~> 1.3"
 

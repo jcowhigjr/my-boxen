@@ -20,9 +20,9 @@ load local if File.file? local
 # Add local deps to the load path.
 
 require "rubygems"
-#require "bundler/setup"
-require 'rubygems'
-require 'bundler'
+require "bundler/setup"
+#require 'rubygems'
+#require 'bundler'
   Bundler.setup
 # Add local lib to the front of the load path if it exists.
 
