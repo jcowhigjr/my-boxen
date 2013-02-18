@@ -54,6 +54,21 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-things
+  specs:
+    things (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vlc
+  specs:
+    vlc (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-watts
+  specs:
+    watts (1.0.0)
+
+GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
   specs:
     inifile (0.9.0)
@@ -77,4 +92,7 @@ DEPENDENCIES
   ruby (= 1.0.0)
   stdlib (= 3.0.0)
   sudo (= 1.0.0)
+  things (= 1.0.0)
+  vlc (= 1.0.0)
+  watts (= 1.0.0)
 

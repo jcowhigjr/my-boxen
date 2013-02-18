@@ -37,13 +37,13 @@ github "sudo",     "1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 #
-github watts
-github vlc 
-github things 
-github spotify 
-github skype 
-github propane 
-github istatmenus3 
-github flux 
-github airfoil 
-github istatmenus4
+github "watts",  "1.0.0"
+github "vlc" ,  "1.0.0"
+github "things" ,  "1.0.0"
+github "spotify" ,  "1.0.0"
+github "skype" ,  "1.0.0"
+github "propane" ,  "1.0.0"
+github "istatmenus3" ,  "1.0.0"
+github "flux" ,  "1.0.0"
+github "airfoil" ,  "1.0.0"
+github "istatmenus4"ho,  "1.0.0"
