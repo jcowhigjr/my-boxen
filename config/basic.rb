@@ -21,9 +21,7 @@ load local if File.file? local
 
 require "rubygems"
 require "bundler/setup"
-#require 'rubygems'
-#require 'bundler'
-  Bundler.setup
+
 # Add local lib to the front of the load path if it exists.
 
 lib = File.expand_path "../../lib", __FILE__
