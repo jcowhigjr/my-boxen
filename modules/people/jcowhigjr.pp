@@ -1,8 +1,9 @@
 ```puppet
 class people::jcowhigjr {
+  include mongodb
   include emacs   # requires emacs module in Puppetfile
   include sparrow # requires sparrow module in Puppetfile
-  	include watts
+  include watts
 	include vlc 
 	include things 
 	include spotify 
