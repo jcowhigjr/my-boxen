@@ -438,4 +438,51 @@ Java HotSpot(TM) 64-Bit Server VM (build 23.6-b02, mixed mode)
 #	[36mvendor/cache/faraday-0.8.6.gem[m
 #	[36mvendor/cache/multipart-post-1.2.0.gem[m
 no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kggit a
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kggit add .
+]2;hub add .]1;git[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kggit commit -a -m 'bundle update and script/boxen= -bootstrap'
+]2;hub commit -a -m 'bundle update and script/boxen-bootstrap']1;git[master 8603941] bundle update and script/boxen-bootstrap
+ 11 files changed, 446 insertions(+), 127 deletions(-)
+ rewrite typescript (97%)
+ create mode 100644 vendor/cache/aws-sdk-1.8.3.1.gem
+ delete mode 100644 vendor/cache/aws-sdk-1.8.3.gem
+ delete mode 100644 vendor/cache/builder-3.1.4.gem
+ create mode 100644 vendor/cache/builder-3.2.0.gem
+ delete mode 100644 vendor/cache/faraday-0.8.5.gem
+ create mode 100644 vendor/cache/faraday-0.8.6.gem
+ delete mode 100644 vendor/cache/multipart-post-1.1.5.gem
+ create mode 100644 vendor/cache/multipart-post-1.2.0.gem
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m)[00m[01;34m [00m[Kggo g git push origin master
+]2;hub push origin master]1;git/Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/open4-1.3.0/lib/open4.rb:33:in `exec': No such file or directory - /opt/boxen/homebrew/bin/git-credential-osxkeychain (Errno::ENOENT)
+	from /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/open4-1.3.0/lib/open4.rb:33:in `popen4'
+	from /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/open4-1.3.0/lib/open4.rb:81:in `call'
+	from /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/open4-1.3.0/lib/open4.rb:81:in `do_popen'
+	from /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/open4-1.3.0/lib/open4.rb:58:in `fork'
+	from /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/open4-1.3.0/lib/open4.rb:58:in `do_popen'
+	from /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/open4-1.3.0/lib/open4.rb:30:in `popen4'
+	from /opt/boxen/bin/boxen-git-credential:35
+Counting objects: 15, done.
+Delta compression using up to 8 threads.
+Compressing objects:  10% (1/10)   Compressing objects:  20% (2/10)   Compressing objects:  30% (3/10)   Compressing objects:  40% (4/10)   Compressing objects:  50% (5/10)   Compressing objects:  60% (6/10)   Compressing objects:  70% (7/10)   Compressing objects:  80% (8/10)   Compressing objects:  90% (9/10)   Compressing objects: 100% (10/10)   Compressing objects: 100% (10/10), done.
+Writing objects:  10% (1/10)   Writing objects:  20% (2/10)   Writing objects:  30% (3/10)   Writing objects:  40% (4/10)   Writing objects:  50% (5/10)   Writing objects:  60% (6/10)   Writing objects:  70% (7/10)   Writing objects:  80% (8/10)   Writing objects:  90% (9/10)   Writing objects: 100% (10/10)   Writing objects: 100% (10/10), 744.36 KiB, done.
+Total 10 (delta 3), reused 0 (delta 0)
+To https://github.com/jcowhigjr/my-boxen
+   46f24ce..8603941  master -> master
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kggit remote show origin
+]2;hub remote show origin]1;gitwarning: more than one branch.master.remote
+* remote origin
+  Fetch URL: https://github.com/jcowhigjr/my-boxen
+  Push  URL: https://github.com/jcowhigjr/my-boxen
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kgit remote show origin[18Dpush origin master[18Dcommit -a -m 'bundle update and script/boxen-bootstrap'[55Dadd .                                                  [50Dstatus[10Dnpm -version[12Djava -version[8D        [9D --help       -version[13Dnpm[P[9C [12Dgit status  add . commit -a -m 'bundle update and script/boxen-bootstrap'[55Dpush origin master                                     [37D[18Dremote show origin[22D                      [22Dssubl . .~/   ~? /.zshrc
+[J[0m.zshrc                 [J[1;36m.zshrc.pre-oh-my-zsh[0m@  [J.zshrc\~             [J[A[0m[27m[24m[27Csubl ~/.zshrc[K
+[J]2;subl ~/.zshrc]1;subl[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kh bboxen
+]2;boxen]1;boxenzsh: command not found: boxen
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K/ ssubl /opt[1m/[0m[0m/boxen[1m/[0m[0m/env.sh[1m [0m[0m 
+]2;subl /opt/boxen/env.sh]1;subl[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Ksubl /opt/boxen/env.sh[22D                      [22Dssubl ~? /.bashrc[1m [0m[0m 
+]2;subl ~/.bashrc]1;subl[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Ksubl ~/.bashrc[14D              [14Deexo it
+]2;exit]1;exit
+Script done on Wed Feb 27 15:51:42 2013
