@@ -1,122 +1,441 @@
-Script started on Mon Feb 18 15:26:09 2013
+Script started on Wed Feb 27 15:32:47 2013
 /Users/jcowhigjr/.oh-my-zsh/oh-my-zsh.sh:source:57: no such file or directory: /Users/jcowhigjr/.oh-my-zsh/custom/jobber.plugin.zsh
-[1m[7m%[27m[1m[0m                                                                                                                                                                                  ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kscript t/
-[J[1;32mbootstrap[0m*             [J[1;32mboxen[0m*                 [J[1;32mboxen-bootstrap[0m*       [J[1;32mboxen-git-credential[0m*  [J[1;32mboxen-my-config[0m*       [J[1;32mnuke[0m*                  [J[1;32msync[0m*                [J[A[0m[27m[24m[27Cscript/[Kbootstrap
-[J[7mbootstrap*           [0m  [J[1;32mboxen[0m*                 [J[1;32mboxen-bootstrap[0m*       [J[1;32mboxen-git-credential[0m*  [J[1;32mboxen-my-config[0m*       [J[1;32mnuke[0m*                  [J[1;32msync[0m*                [J[A[0m[27m[24m[27Cscript/bootstrap[K
-[7mbootstrap*           [0m  [7mbootstrap*           [0m  [A[0m[27m[24m[27Cscript/bootstrap[K
-[J[A[43C[1m [0m[0m          boxen
-[J]2;script/boxen]1;script/boxenBoxen has unpushed commits on master, won't auto-update!
-[33m--> You have an existing Homebrew install in /usr/local[0m
-    The Boxen provides its own Homebrew, so consider deleting yours.
-    Keeping both will confuse many projects.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kscript/bo
+[J[1;32mbootstrap[0m*             [J[1;32mboxen[0m*                 [J[1;32mboxen-bootstrap[0m*       [J[1;32mboxen-git-credential[0m*  [J[1;32mboxen-my-config[0m*     [J[A[0m[27m[24m[27Cscript/bo[Kx
+[J[A[37Cen
+[J]2;script/boxen]1;script/boxenBoxen has a dirty tree, won't auto-update!
+[BUG] cross-thread violation on rb_gc()
+(null)
 
-[mNotice: /Stage[main]/Boxen::Config/Group[puppet]/ensure: created[0m
-[mNotice: /Stage[main]/Boxen::Config/File[/opt/boxen/cache]/ensure: created[0m
-[mNotice: /Stage[main]/Nginx/File[/opt/boxen/config/nginx]/ensure: created[0m
-[mNotice: /Stage[main]/Nginx/File[/opt/boxen/config/nginx/sites]/ensure: created[0m
-[mNotice: /Stage[main]/Nginx/File[/opt/boxen/config/nginx/public]/ensure: created[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/fonts]/ensure: created[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/index.html]/ensure: defined content as '{md5}3b180c2f17c11e78f97c5505a491a078'[0m
-[mNotice: /Stage[main]/Nginx/File[/opt/boxen/data/nginx]/ensure: created[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/fonts/pictos-web.svg]/ensure: defined content as '{md5}f3490566888c762c5fc8136e88ab241b'[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/images]/ensure: created[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/images/puppet.png]/ensure: defined content as '{md5}1eb16ae4e0a8293e6eec9a498e71bfa2'[0m
-[mNotice: /Stage[main]/Nginx/File[/opt/boxen/config/nginx/mime.types]/ensure: defined content as '{md5}530e1a47497cea31c5199ecffef93c29'[0m
-[mNotice: /Stage[main]/Nginx/File[/Library/LaunchDaemons/dev.nginx.plist]/ensure: defined content as '{md5}6fa5ac5b57b00a813738a262ff578181'[0m
-[mNotice: /Stage[main]/Nginx/File[/opt/boxen/log/nginx]/ensure: created[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/images/background-tile.png]/ensure: defined content as '{md5}8b19bace6904e62c9e8117b14b006fe3'[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/fonts/pictos-web.woff]/ensure: defined content as '{md5}44a0247f7400f26597fbed1483422a24'[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/fonts/pictos-web.eot]/ensure: defined content as '{md5}7a594c02942913cdb33f266f60015855'[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/css]/ensure: created[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/css/bass.css]/ensure: defined content as '{md5}961b4b88d3b19b58b34447f87ae58c8e'[0m
-[mNotice: /File[/opt/boxen/config/nginx/public/fonts/pictos-web.ttf]/ensure: defined content as '{md5}f705625d9690d8a3d6d6111412fde810'[0m
-[mNotice: /Stage[main]/Boxen::Repo/File[/opt/boxen/repo]/group: group changed 'admin' to 'staff'[0m
-[mNotice: /Stage[main]/Boxen::Security/Boxen::Osx_defaults[short delay for password dialog on screensaver]/Exec[osx_defaults write com.apple.screensaver:askForPasswordDelay=>5]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Nvm/File[/opt/boxen/bin/node]/ensure: created[0m
-[mNotice: /Stage[main]/Boxen::Config/File[/opt/boxen/data/puppet/graphs]/ensure: created[0m
-[mNotice: /Stage[main]/Hub/Git::Config::Global[hub.protocol]/Ini_setting[set hub.protocol to https in /Users/jcowhigjr/.gitconfig]/ensure: created[0m
-[mNotice: /Stage[main]/Boxen::Profile/Exec[create a minimal profile]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Hub/File[/opt/boxen/env.d/hub.sh]/ensure: defined content as '{md5}7059a8ff6cc1aa39ab6ec047e51ae3b9'[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/homebrew]/ensure: created[0m
-[mNotice: /Stage[main]/Homebrew/Exec[install-homebrew]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/env.d/cflags.sh]/ensure: defined content as '{md5}ea9e5db4aa3bdef3a5d539765dfce761'[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/cache/homebrew]/ensure: created[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/homebrew/Library/Taps]/ensure: created[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/homebrew/Library/Taps/boxen-brews]/ensure: created[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/env.d/homebrew.sh]/ensure: defined content as '{md5}3ecd84740747d6af065f29b8932dbb5a'[0m
-[mNotice: /Stage[main]/Homebrew/Exec[fix-homebrew-permissions]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/homebrew/Library/Homebrew/boxen-monkeypatches.rb]/ensure: defined content as '{md5}8f564b8a9f12f9985ec08ea7255695d0'[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/homebrew/Library/Homebrew/cmd/boxen-upgrade.rb]/ensure: defined content as '{md5}214fd2083aba837296d580f979d914a6'[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/homebrew/Library/Homebrew/cmd/boxen-latest.rb]/ensure: defined content as '{md5}f3d578a229fa171d050642ff1beb4d33'[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/homebrew/Library/Homebrew/cmd/boxen-install.rb]/ensure: defined content as '{md5}14f23c053c54b8e514658bc4bc5b3b88'[0m
-[mNotice: /Stage[main]/Homebrew/File[/opt/boxen/env.d/ldflags.sh]/ensure: defined content as '{md5}baf9d685b70cecf8dd5da44ee45f8023'[0m
-[mNotice: /Stage[main]/Nginx/Homebrew::Formula[nginx]/File[/opt/boxen/homebrew/Library/Taps/boxen-brews/nginx.rb]/ensure: defined content as '{md5}2aa02b4bb98abfea4b3042e0198cf5d2'[0m
-[mNotice: /Stage[main]/Dnsmasq/File[/opt/boxen/log/dnsmasq]/ensure: created[0m
-[mNotice: /Stage[main]/Dnsmasq/Homebrew::Formula[dnsmasq]/File[/opt/boxen/homebrew/Library/Taps/boxen-brews/dnsmasq.rb]/ensure: defined content as '{md5}887f9bf5143476a83fd5f6bab6c5d2df'[0m
-[mNotice: /Stage[main]/Dnsmasq/File[/Library/LaunchDaemons/dev.dnsmasq.plist]/ensure: defined content as '{md5}2561a635a21d060ef79a6bb5f8ce9e55'[0m
-[mNotice: /Stage[main]/Dnsmasq/File[/etc/resolver]/ensure: created[0m
-[mNotice: /Stage[main]/Dnsmasq/File[/etc/resolver/dev]/ensure: defined content as '{md5}5d32be72cf6aac6410325aecda6d5859'[0m
-[mNotice: /Stage[main]/Dnsmasq/File[/opt/boxen/config/dnsmasq]/ensure: created[0m
-[mNotice: /Stage[main]/Dnsmasq/File[/opt/boxen/config/dnsmasq/dnsmasq.conf]/ensure: defined content as '{md5}8e35a05788e08a08d3ba77fc5d271ca8'[0m
-[mNotice: /Stage[main]/Gcc/Homebrew::Formula[apple-gcc42]/File[/opt/boxen/homebrew/Library/Taps/boxen-brews/apple-gcc42.rb]/ensure: defined content as '{md5}6f0ae5480e9546c11baab181cd0ae8fb'[0m
-[mNotice: /Stage[main]/Git/File[/opt/boxen/bin/boxen-git-credential]/ensure: created[0m
-[mNotice: /Stage[main]/Git/File[/opt/boxen/config/git]/ensure: created[0m
-[mNotice: /Stage[main]/Git/File[/opt/boxen/config/git/gitignore]/ensure: defined content as '{md5}399750643c151dfe17d9a820109a0c7d'[0m
-[mNotice: /Stage[main]/Git/Git::Config::Global[core.excludesfile]/Ini_setting[set core.excludesfile to /opt/boxen/config/git/gitignore in /Users/jcowhigjr/.gitconfig]/value: value changed '/Users/jcowhigjr/.gitignore_global' to '/opt/boxen/config/git/gitignore'[0m
-[mNotice: /Stage[main]/Git/Git::Config::Global[credential.helper]/Ini_setting[set credential.helper to /opt/boxen/bin/boxen-git-credential in /Users/jcowhigjr/.gitconfig]/value: value changed 'osxkeychain' to '/opt/boxen/bin/boxen-git-credential'[0m
-[mNotice: /Stage[main]/Git/Homebrew::Formula[git]/File[/opt/boxen/homebrew/Library/Taps/boxen-brews/git.rb]/ensure: defined content as '{md5}4a2adbb95d4813c5e7861517e5c42ec8'[0m
-[mNotice: Package[boxen/brews/apple-gcc42](provider=homebrew): Updating homebrew formulas[0m
-remote: Counting objects: 16317   [Kremote: Counting objects: 22924   [Kremote: Counting objects: 25642   [Kremote: Counting objects: 28310   [Kremote: Counting objects: 31695   [Kremote: Counting objects: 35743   [Kremote: Counting objects: 39912   [Kremote: Counting objects: 44184   [Kremote: Counting objects: 48540   [Kremote: Counting objects: 51837   [Kremote: Counting objects: 54369   [Kremote: Counting objects: 57910   [Kremote: Counting objects: 61562   [Kremote: Counting objects: 64707   [Kremote: Counting objects: 68089   [Kremote: Counting objects: 74046   [Kremote: Counting objects: 82270   [Kremote: Counting objects: 90404   [Kremote: Counting objects: 99646   [Kremote: Counting objects: 102035, done.[K
-remote: Compressing objects:   0% (1/43468)   [Kremote: Compressing objects:   1% (435/43468)   [Kremote: Compressing objects:   2% (870/43468)   [Kremote: Compressing objects:   3% (1305/43468)   [Kremote: Compressing objects:   4% (1739/43468)   [Kremote: Compressing objects:   5% (2174/43468)   [Kremote: Compressing objects:   6% (2609/43468)   [Kremote: Compressing objects:   7% (3043/43468)   [Kremote: Compressing objects:   8% (3478/43468)   [Kremote: Compressing objects:   9% (3913/43468)   [Kremote: Compressing objects:  10% (4347/43468)   [Kremote: Compressing objects:  11% (4782/43468)   [Kremote: Compressing objects:  11% (5126/43468)   [Kremote: Compressing objects:  12% (5217/43468)   [Kremote: Compressing objects:  13% (5651/43468)   [Kremote: Compressing objects:  14% (6086/43468)   [Kremote: Compressing objects:  15% (6521/43468)   [Kremote: Compressing objects:  16% (6955/43468)   [Kremote: Compressing objects:  17% (7390/43468)   [Kremote: Compressing objects:  18% (7825/43468)   [Kremote: Compressing objects:  19% (8259/43468)   [Kremote: Compressing objects:  20% (8694/43468)   [Kremote: Compressing objects:  21% (9129/43468)   [Kremote: Compressing objects:  22% (9563/43468)   [Kremote: Compressing objects:  23% (9998/43468)   [Kremote: Compressing objects:  24% (10433/43468)   [Kremote: Compressing objects:  25% (10867/43468)   [Kremote: Compressing objects:  26% (11302/43468)   [Kremote: Compressing objects:  27% (11737/43468)   [Kremote: Compressing objects:  28% (12172/43468)   [Kremote: Compressing objects:  29% (12606/43468)   [Kremote: Compressing objects:  30% (13041/43468)   [Kremote: Compressing objects:  31% (13476/43468)   [Kremote: Compressing objects:  32% (13910/43468)   [Kremote: Compressing objects:  33% (14345/43468)   [Kremote: Compressing objects:  33% (14409/43468)   [Kremote: Compressing objects:  34% (14780/43468)   [Kremote: Compressing objects:  34% (15184/43468)   [Kremote: Compressing objects:  35% (15214/43468)   [Kremote: Compressing objects:  35% (15361/43468)   [Kremote: Compressing objects:  35% (15554/43468)   [Kremote: Compressing objects:  36% (15649/43468)   [Kremote: Compressing objects:  36% (15899/43468)   [Kremote: Compressing objects:  37% (16084/43468)   [Kremote: Compressing objects:  38% (16518/43468)   [Kremote: Compressing objects:  38% (16745/43468)   [Kremote: Compressing objects:  39% (16953/43468)   [Kremote: Compressing objects:  40% (17388/43468)   [Kremote: Compressing objects:  40% (17390/43468)   [Kremote: Compressing objects:  41% (17822/43468)   [Kremote: Compressing objects:  42% (18257/43468)   [Kremote: Compressing objects:  43% (18692/43468)   [Kremote: Compressing objects:  44% (19126/43468)   [Kremote: Compressing objects:  45% (19561/43468)   [Kremote: Compressing objects:  46% (19996/43468)   [Kremote: Compressing objects:  47% (20430/43468)   [Kremote: Compressing objects:  48% (20865/43468)   [Kremote: Compressing objects:  49% (21300/43468)   [Kremote: Compressing objects:  50% (21734/43468)   [Kremote: Compressing objects:  51% (22169/43468)   [Kremote: Compressing objects:  52% (22604/43468)   [Kremote: Compressing objects:  53% (23039/43468)   [Kremote: Compressing objects:  54% (23473/43468)   [Kremote: Compressing objects:  55% (23908/43468)   [Kremote: Compressing objects:  56% (24343/43468)   [Kremote: Compressing objects:  57% (24777/43468)   [Kremote: Compressing objects:  57% (25077/43468)   [Kremote: Compressing objects:  58% (25212/43468)   [Kremote: Compressing objects:  59% (25647/43468)   [Kremote: Compressing objects:  60% (26081/43468)   [Kremote: Compressing objects:  61% (26516/43468)   [Kremote: Compressing objects:  62% (26951/43468)   [Kremote: Compressing objects:  63% (27385/43468)   [Kremote: Compressing objects:  64% (27820/43468)   [Kremote: Compressing objects:  65% (28255/43468)   [Kremote: Compressing objects:  66% (28689/43468)   [Kremote: Compressing objects:  67% (29124/43468)   [Kremote: Compressing objects:  68% (29559/43468)   [Kremote: Compressing objects:  69% (29993/43468)   [Kremote: Compressing objects:  70% (30428/43468)   [Kremote: Compressing objects:  71% (30863/43468)   [Kremote: Compressing objects:  72% (31297/43468)   [Kremote: Compressing objects:  73% (31732/43468)   [Kremote: Compressing objects:  74% (32167/43468)   [Kremote: Compressing objects:  75% (32601/43468)   [Kremote: Compressing objects:  76% (33036/43468)   [Kremote: Compressing objects:  77% (33471/43468)   [Kremote: Compressing objects:  78% (33906/43468)   [Kremote: Compressing objects:  79% (34340/43468)   [Kremote: Compressing objects:  80% (34775/43468)   [Kremote: Compressing objects:  81% (35210/43468)   [Kremote: Compressing objects:  82% (35644/43468)   [Kremote: Compressing objects:  83% (36079/43468)   [Kremote: Compressing objects:  84% (36514/43468)   [Kremote: Compressing objects:  85% (36948/43468)   [Kremote: Compressing objects:  86% (37383/43468)   [Kremote: Compressing objects:  87% (37818/43468)   [Kremote: Compressing objects:  88% (38252/43468)   [Kremote: Compressing objects:  89% (38687/43468)   [Kremote: Compressing objects:  90% (39122/43468)   [Kremote: Compressing objects:  91% (39556/43468)   [Kremote: Compressing objects:  92% (39991/43468)   [Kremote: Compressing objects:  93% (40426/43468)   [Kremote: Compressing objects:  94% (40860/43468)   [Kremote: Compressing objects:  95% (41295/43468)   [Kremote: Compressing objects:  96% (41730/43468)   [Kremote: Compressing objects:  96% (42136/43468)   [Kremote: Compressing objects:  97% (42164/43468)   [Kremote: Compressing objects:  98% (42599/43468)   [Kremote: Compressing objects:  99% (43034/43468)   [Kremote: Compressing objects: 100% (43468/43468)   [Kremote: Compressing objects: 100% (43468/43468), done.[K
-Receiving objects:   0% (1/102035)   Receiving objects:   0% (484/102035), 100.00 KiB | 81 KiB/s   Receiving objects:   0% (970/102035), 132.00 KiB | 65 KiB/s   Receiving objects:   1% (1021/102035), 132.00 KiB | 65 KiB/s   Receiving objects:   1% (1509/102035), 292.00 KiB | 93 KiB/s   Receiving objects:   1% (1952/102035), 340.00 KiB | 91 KiB/s   Receiving objects:   2% (2041/102035), 340.00 KiB | 91 KiB/s   Receiving objects:   2% (2433/102035), 468.00 KiB | 98 KiB/s   Receiving objects:   2% (2825/102035), 580.00 KiB | 93 KiB/s   Receiving objects:   2% (2926/102035), 604.00 KiB | 85 KiB/s   Receiving objects:   3% (3062/102035), 604.00 KiB | 85 KiB/s   Receiving objects:   3% (3432/102035), 668.00 KiB | 94 KiB/s   Receiving objects:   3% (3870/102035), 780.00 KiB | 84 KiB/s   Receiving objects:   4% (4082/102035), 828.00 KiB | 84 KiB/s   Receiving objects:   4% (4409/102035), 924.00 KiB | 84 KiB/s   Receiving objects:   4% (4817/102035), 972.00 KiB | 82 KiB/s   Receiving objects:   5% (5102/102035), 1.04 MiB | 84 KiB/s   Receiving objects:   5% (5116/102035), 1.04 MiB | 84 KiB/s   Receiving objects:   5% (5484/102035), 1.13 MiB | 87 KiB/s   Receiving objects:   5% (6114/102035), 1.21 MiB | 93 KiB/s   Receiving objects:   6% (6123/102035), 1.21 MiB | 93 KiB/s   Receiving objects:   6% (6673/102035), 1.32 MiB | 95 KiB/s   Receiving objects:   7% (7143/102035), 1.45 MiB | 111 KiB/s   Receiving objects:   7% (7559/102035), 1.57 MiB | 121 KiB/s   Receiving objects:   7% (7937/102035), 1.64 MiB | 119 KiB/s   Receiving objects:   8% (8163/102035), 1.69 MiB | 114 KiB/s   Receiving objects:   8% (8232/102035), 1.73 MiB | 110 KiB/s   Receiving objects:   8% (8460/102035), 1.78 MiB | 108 KiB/s   Receiving objects:   9% (9184/102035), 1.89 MiB | 119 KiB/s   Receiving objects:   9% (9257/102035), 1.89 MiB | 119 KiB/s   Receiving objects:  10% (10204/102035), 2.12 MiB | 138 KiB/s   Receiving objects:  10% (10510/102035), 2.12 MiB | 138 KiB/s   Receiving objects:  10% (11179/102035), 2.36 MiB | 133 KiB/s   Receiving objects:  11% (11224/102035), 2.36 MiB | 133 KiB/s   Receiving objects:  11% (11554/102035), 2.45 MiB | 142 KiB/s   Receiving objects:  11% (11936/102035), 2.54 MiB | 149 KiB/s   Receiving objects:  11% (12168/102035), 2.57 MiB | 133 KiB/s   Receiving objects:  12% (12245/102035), 2.57 MiB | 133 KiB/s   Receiving objects:  12% (12776/102035), 2.71 MiB | 109 KiB/s   Receiving objects:  12% (13139/102035), 2.77 MiB | 94 KiB/s   Receiving objects:  13% (13265/102035), 2.80 MiB | 82 KiB/s   Receiving objects:  13% (13725/102035), 2.91 MiB | 90 KiB/s   Receiving objects:  14% (14285/102035), 3.02 MiB | 103 KiB/s   Receiving objects:  14% (14647/102035), 3.11 MiB | 110 KiB/s   Receiving objects:  14% (15163/102035), 3.19 MiB | 120 KiB/s   Receiving objects:  15% (15306/102035), 3.19 MiB | 120 KiB/s   Receiving objects:  16% (16326/102035), 3.45 MiB | 155 KiB/s   Receiving objects:  16% (16355/102035), 3.45 MiB | 155 KiB/s   Receiving objects:  16% (16762/102035), 3.49 MiB | 150 KiB/s   Receiving objects:  17% (17346/102035), 3.67 MiB | 171 KiB/s   Receiving objects:  17% (17379/102035), 3.69 MiB | 156 KiB/s   Receiving objects:  17% (17595/102035), 3.72 MiB | 136 KiB/s   Receiving objects:  17% (18259/102035), 3.89 MiB | 140 KiB/s   Receiving objects:  18% (18367/102035), 3.89 MiB | 140 KiB/s   Receiving objects:  18% (18642/102035), 3.95 MiB | 127 KiB/s   Receiving objects:  19% (19387/102035), 4.05 MiB | 118 KiB/s   Receiving objects:  19% (20014/102035), 4.26 MiB | 154 KiB/s   Receiving objects:  20% (20407/102035), 4.44 MiB | 174 KiB/s   Receiving objects:  20% (20607/102035), 4.54 MiB | 167 KiB/s   Receiving objects:  21% (21428/102035), 4.68 MiB | 194 KiB/s   Receiving objects:  21% (21769/102035), 4.83 MiB | 225 KiB/s   Receiving objects:  22% (22448/102035), 5.09 MiB | 249 KiB/s   Receiving objects:  22% (22534/102035), 5.09 MiB | 249 KiB/s   Receiving objects:  23% (23469/102035), 5.23 MiB | 267 KiB/s   Receiving objects:  23% (23562/102035), 5.23 MiB | 267 KiB/s   Receiving objects:  23% (23837/102035), 5.50 MiB | 257 KiB/s   Receiving objects:  24% (24489/102035), 5.65 MiB | 237 KiB/s   Receiving objects:  24% (24825/102035), 5.65 MiB | 237 KiB/s   Receiving objects:  25% (25509/102035), 5.86 MiB | 214 KiB/s   Receiving objects:  25% (25951/102035), 5.86 MiB | 214 KiB/s   Receiving objects:  26% (26530/102035), 6.03 MiB | 221 KiB/s   Receiving objects:  27% (27550/102035), 6.23 MiB | 238 KiB/s   Receiving objects:  27% (28222/102035), 6.23 MiB | 238 KiB/s   Receiving objects:  28% (28570/102035), 6.23 MiB | 238 KiB/s   Receiving objects:  28% (29286/102035), 6.48 MiB | 217 KiB/s   Receiving objects:  29% (29591/102035), 6.48 MiB | 217 KiB/s   Receiving objects:  30% (30611/102035), 6.64 MiB | 232 KiB/s   Receiving objects:  30% (31531/102035), 6.79 MiB | 240 KiB/s   Receiving objects:  31% (31631/102035), 6.79 MiB | 240 KiB/s   Receiving objects:  31% (32486/102035), 7.00 MiB | 252 KiB/s   Receiving objects:  32% (32652/102035), 7.00 MiB | 252 KiB/s   Receiving objects:  33% (33672/102035), 7.18 MiB | 273 KiB/s   Receiving objects:  33% (33875/102035), 7.18 MiB | 273 KiB/s   Receiving objects:  34% (34692/102035), 7.43 MiB | 249 KiB/s   Receiving objects:  34% (34747/102035), 7.43 MiB | 249 KiB/s   Receiving objects:  35% (35713/102035), 7.66 MiB | 257 KiB/s   Receiving objects:  35% (35870/102035), 7.66 MiB | 257 KiB/s   Receiving objects:  35% (36700/102035), 7.92 MiB | 244 KiB/s   Receiving objects:  36% (36733/102035), 7.92 MiB | 244 KiB/s   Receiving objects:  37% (37753/102035), 8.02 MiB | 237 KiB/s   Receiving objects:  37% (38209/102035), 8.16 MiB | 251 KiB/s   Receiving objects:  38% (38774/102035), 8.26 MiB | 236 KiB/s   Receiving objects:  38% (39184/102035), 8.38 MiB | 230 KiB/s   Receiving objects:  39% (39794/102035), 8.38 MiB | 230 KiB/s   Receiving objects:  40% (40814/102035), 8.49 MiB | 229 KiB/s   Receiving objects:  41% (41835/102035), 8.63 MiB | 240 KiB/s   Receiving objects:  41% (41891/102035), 8.63 MiB | 240 KiB/s   Receiving objects:  42% (42855/102035), 8.63 MiB | 240 KiB/s   Receiving objects:  43% (43876/102035), 8.80 MiB | 245 KiB/s   Receiving objects:  43% (44585/102035), 8.94 MiB | 246 KiB/s   Receiving objects:  44% (44896/102035), 8.94 MiB | 246 KiB/s   Receiving objects:  45% (45916/102035), 9.05 MiB | 246 KiB/s   Receiving objects:  45% (46604/102035), 9.17 MiB | 250 KiB/s   Receiving objects:  46% (46937/102035), 9.17 MiB | 250 KiB/s   Receiving objects:  46% (47488/102035), 9.25 MiB | 230 KiB/s   Receiving objects:  47% (47957/102035), 9.33 MiB | 223 KiB/s   Receiving objects:  47% (48706/102035), 9.44 MiB | 187 KiB/s   Receiving objects:  47% (48939/102035), 9.44 MiB | 187 KiB/s   Receiving objects:  48% (48977/102035), 9.44 MiB | 187 KiB/s   Receiving objects:  49% (49998/102035), 9.58 MiB | 153 KiB/s   Receiving objects:  49% (50288/102035), 9.58 MiB | 153 KiB/s   Receiving objects:  50% (51018/102035), 9.73 MiB | 128 KiB/s   Receiving objects:  50% (51107/102035), 9.73 MiB | 128 KiB/s   Receiving objects:  51% (52038/102035), 9.86 MiB | 129 KiB/s   Receiving objects:  51% (52552/102035), 9.95 MiB | 136 KiB/s   Receiving objects:  52% (53059/102035), 9.99 MiB | 129 KiB/s   Receiving objects:  52% (53231/102035), 10.00 MiB | 118 KiB/s   Receiving objects:  53% (54079/102035), 10.09 MiB | 136 KiB/s   Receiving objects:  53% (54418/102035), 10.09 MiB | 136 KiB/s   Receiving objects:  53% (54938/102035), 10.25 MiB | 106 KiB/s   Receiving objects:  54% (55099/102035), 10.25 MiB | 106 KiB/s   Receiving objects:  54% (55123/102035), 10.29 MiB | 112 KiB/s   Receiving objects:  54% (55375/102035), 10.36 MiB | 78 KiB/s   Receiving objects:  54% (56062/102035), 10.40 MiB | 78 KiB/s   Receiving objects:  55% (56120/102035), 10.40 MiB | 78 KiB/s   Receiving objects:  55% (56625/102035), 10.47 MiB | 70 KiB/s   Receiving objects:  56% (57140/102035), 10.47 MiB | 70 KiB/s   Receiving objects:  57% (58160/102035), 10.53 MiB | 66 KiB/s   Receiving objects:  57% (58177/102035), 10.53 MiB | 66 KiB/s   Receiving objects:  57% (58616/102035), 10.67 MiB | 77 KiB/s   Receiving objects:  57% (59135/102035), 10.84 MiB | 100 KiB/s   Receiving objects:  58% (59181/102035), 10.84 MiB | 100 KiB/s   Receiving objects:  58% (59793/102035), 10.95 MiB | 109 KiB/s   Receiving objects:  59% (60201/102035), 10.95 MiB | 109 KiB/s   Receiving objects:  60% (61221/102035), 11.06 MiB | 121 KiB/s   Receiving objects:  60% (61594/102035), 11.06 MiB | 121 KiB/s   Receiving objects:  61% (62242/102035), 11.20 MiB | 130 KiB/s   Receiving objects:  61% (63174/102035), 11.20 MiB | 130 KiB/s   Receiving objects:  62% (63262/102035), 11.20 MiB | 130 KiB/s   Receiving objects:  62% (63687/102035), 11.36 MiB | 133 KiB/s   Receiving objects:  62% (63850/102035), 11.39 MiB | 113 KiB/s   Receiving objects:  62% (64281/102035), 11.46 MiB | 104 KiB/s   Receiving objects:  63% (64283/102035), 11.46 MiB | 104 KiB/s   Receiving objects:  63% (64863/102035), 11.49 MiB | 96 KiB/s   Receiving objects:  64% (65303/102035), 11.53 MiB | 85 KiB/s   Receiving objects:  64% (65889/102035), 11.57 MiB | 68 KiB/s   Receiving objects:  65% (66323/102035), 11.57 MiB | 68 KiB/s   Receiving objects:  65% (66568/102035), 11.61 MiB | 48 KiB/s   Receiving objects:  66% (67344/102035), 11.61 MiB | 48 KiB/s   Receiving objects:  66% (67671/102035), 11.68 MiB | 51 KiB/s   Receiving objects:  67% (68364/102035), 11.75 MiB | 58 KiB/s   Receiving objects:  67% (68686/102035), 11.82 MiB | 62 KiB/s   Receiving objects:  68% (69384/102035), 11.86 MiB | 64 KiB/s   Receiving objects:  68% (69412/102035), 11.89 MiB | 64 KiB/s   Receiving objects:  68% (69684/102035), 11.93 MiB | 62 KiB/s   Receiving objects:  68% (70070/102035), 12.00 MiB | 64 KiB/s   Receiving objects:  69% (70405/102035), 12.04 MiB | 82 KiB/s   Receiving objects:  69% (70955/102035), 12.07 MiB | 75 KiB/s   Receiving objects:  70% (71425/102035), 12.11 MiB | 69 KiB/s   Receiving objects:  70% (71556/102035), 12.13 MiB | 60 KiB/s   Receiving objects:  70% (72065/102035), 12.21 MiB | 60 KiB/s   Receiving objects:  71% (72445/102035), 12.21 MiB | 60 KiB/s   Receiving objects:  71% (72759/102035), 12.28 MiB | 60 KiB/s   Receiving objects:  72% (73466/102035), 12.28 MiB | 60 KiB/s   Receiving objects:  72% (73659/102035), 12.36 MiB | 64 KiB/s   Receiving objects:  72% (74473/102035), 12.47 MiB | 72 KiB/s   Receiving objects:  73% (74486/102035), 12.47 MiB | 72 KiB/s   Receiving objects:  73% (75457/102035), 12.54 MiB | 78 KiB/s   Receiving objects:  74% (75506/102035), 12.54 MiB | 78 KiB/s   Receiving objects:  75% (76527/102035), 12.62 MiB | 85 KiB/s   Receiving objects:  75% (76945/102035), 12.62 MiB | 85 KiB/s   Receiving objects:  76% (77547/102035), 12.79 MiB | 104 KiB/s   Receiving objects:  76% (77593/102035), 12.79 MiB | 104 KiB/s   Receiving objects:  77% (78567/102035), 12.79 MiB | 104 KiB/s   Receiving objects:  78% (79588/102035), 12.94 MiB | 132 KiB/s   Receiving objects:  78% (80165/102035), 12.94 MiB | 132 KiB/s   Receiving objects:  79% (80608/102035), 13.01 MiB | 132 KiB/s   Receiving objects:  80% (81628/102035), 13.09 MiB | 137 KiB/s   Receiving objects:  80% (81745/102035), 13.09 MiB | 137 KiB/s   Receiving objects:  80% (82566/102035), 13.21 MiB | 129 KiB/s   Receiving objects:  81% (82649/102035), 13.21 MiB | 129 KiB/s   Receiving objects:  82% (83669/102035), 13.21 MiB | 129 KiB/s   Receiving objects:  82% (83944/102035), 13.32 MiB | 136 KiB/s   Receiving objects:  83% (84690/102035), 13.40 MiB | 134 KiB/s   Receiving objects:  83% (85546/102035), 13.50 MiB | 127 KiB/s   Receiving objects:  84% (85710/102035), 13.50 MiB | 127 KiB/s   Receiving objects:  85% (86730/102035), 13.50 MiB | 127 KiB/s   Receiving objects:  85% (86968/102035), 13.60 MiB | 129 KiB/s   Receiving objects:  85% (87513/102035), 13.64 MiB | 123 KiB/s   Receiving objects:  86% (87751/102035), 13.68 MiB | 117 KiB/s   Receiving objects:  86% (88520/102035), 13.71 MiB | 108 KiB/s   Receiving objects:  87% (88771/102035), 13.76 MiB | 103 KiB/s   Receiving objects:  87% (88948/102035), 13.80 MiB | 107 KiB/s   Receiving objects:  88% (89791/102035), 13.86 MiB | 96 KiB/s   Receiving objects:  88% (90000/102035), 13.90 MiB | 87 KiB/s   Receiving objects:  88% (90553/102035), 13.94 MiB | 83 KiB/s   Receiving objects:  89% (90812/102035), 13.94 MiB | 83 KiB/s   Receiving objects:  89% (91468/102035), 14.02 MiB | 79 KiB/s   Receiving objects:  90% (91832/102035), 14.09 MiB | 81 KiB/s   Receiving objects:  90% (92054/102035), 14.14 MiB | 81 KiB/s   Receiving objects:  91% (92852/102035), 14.18 MiB | 82 KiB/s   Receiving objects:  91% (93194/102035), 14.28 MiB | 88 KiB/s   Receiving objects:  92% (93873/102035), 14.28 MiB | 88 KiB/s   Receiving objects:  92% (94114/102035), 14.37 MiB | 99 KiB/s   Receiving objects:  93% (94893/102035), 14.49 MiB | 110 KiB/s   Receiving objects:  93% (95663/102035), 14.59 MiB | 123 KiB/s   Receiving objects:  94% (95913/102035), 14.59 MiB | 123 KiB/s   Receiving objects:  94% (96886/102035), 14.68 MiB | 134 KiB/s   Receiving objects:  95% (96934/102035), 14.68 MiB | 134 KiB/s   Receiving objects:  95% (97645/102035), 14.77 MiB | 125 KiB/s   Receiving objects:  96% (97954/102035), 14.77 MiB | 125 KiB/s   Receiving objects:  97% (98974/102035), 14.95 MiB | 154 KiB/s   Receiving objects:  98% (99995/102035), 14.95 MiB | 154 KiB/s   Receiving objects:  98% (100558/102035), 15.13 MiB | 181 KiB/s   Receiving objects:  99% (101015/102035), 15.13 MiB | 181 KiB/s   remote: Total 102035 (delta 72073), reused 84787 (delta 57660)[K
-Receiving objects: 100% (102035/102035), 15.32 MiB | 193 KiB/s   Receiving objects: 100% (102035/102035), 15.34 MiB | 189 KiB/s, done.
-Resolving deltas:   0% (0/72073)   Resolving deltas:   1% (760/72073)   Resolving deltas:   2% (1452/72073)   Resolving deltas:   3% (2167/72073)   Resolving deltas:   4% (2885/72073)   Resolving deltas:   5% (3607/72073)   Resolving deltas:   6% (4330/72073)   Resolving deltas:   7% (5071/72073)   Resolving deltas:   8% (5780/72073)   Resolving deltas:   9% (6509/72073)   Resolving deltas:  10% (7211/72073)   Resolving deltas:  11% (7932/72073)   Resolving deltas:  12% (8652/72073)   Resolving deltas:  13% (9372/72073)   Resolving deltas:  14% (10097/72073)   Resolving deltas:  15% (10813/72073)   Resolving deltas:  16% (11532/72073)   Resolving deltas:  17% (12260/72073)   Resolving deltas:  18% (13023/72073)   Resolving deltas:  19% (13706/72073)   Resolving deltas:  20% (14422/72073)   Resolving deltas:  21% (15136/72073)   Resolving deltas:  22% (15858/72073)   Resolving deltas:  23% (16614/72073)   Resolving deltas:  24% (17308/72073)   Resolving deltas:  25% (18055/72073)   Resolving deltas:  26% (18792/72073)   Resolving deltas:  27% (19474/72073)   Resolving deltas:  28% (20359/72073)   Resolving deltas:  29% (20963/72073)   Resolving deltas:  30% (21956/72073)   Resolving deltas:  31% (22570/72073)   Resolving deltas:  33% (23884/72073)   Resolving deltas:  34% (24538/72073)   Resolving deltas:  35% (25229/72073)   Resolving deltas:  36% (25962/72073)   Resolving deltas:  37% (26861/72073)   Resolving deltas:  38% (27572/72073)   Resolving deltas:  39% (28125/72073)   Resolving deltas:  40% (29150/72073)   Resolving deltas:  41% (29586/72073)   Resolving deltas:  42% (30358/72073)   Resolving deltas:  43% (31005/72073)   Resolving deltas:  44% (31985/72073)   Resolving deltas:  45% (32435/72073)   Resolving deltas:  46% (33192/72073)   Resolving deltas:  47% (33877/72073)   Resolving deltas:  48% (34611/72073)   Resolving deltas:  49% (35325/72073)   Resolving deltas:  50% (36037/72073)   Resolving deltas:  51% (36808/72073)   Resolving deltas:  52% (38149/72073)   Resolving deltas:  53% (38222/72073)   Resolving deltas:  54% (39616/72073)   Resolving deltas:  55% (39642/72073)   Resolving deltas:  56% (40976/72073)   Resolving deltas:  57% (41087/72073)   Resolving deltas:  58% (41811/72073)   Resolving deltas:  59% (42655/72073)   Resolving deltas:  60% (43269/72073)   Resolving deltas:  61% (43974/72073)   Resolving deltas:  62% (44718/72073)   Resolving deltas:  64% (46485/72073)   Resolving deltas:  65% (46908/72073)   Resolving deltas:  66% (47609/72073)   Resolving deltas:  67% (48307/72073)   Resolving deltas:  68% (49016/72073)   Resolving deltas:  69% (50074/72073)   Resolving deltas:  70% (50696/72073)   Resolving deltas:  71% (51177/72073)   Resolving deltas:  72% (51903/72073)   Resolving deltas:  73% (52630/72073)   Resolving deltas:  74% (53339/72073)   Resolving deltas:  75% (54097/72073)   Resolving deltas:  76% (54962/72073)   Resolving deltas:  77% (55742/72073)   Resolving deltas:  79% (57048/72073)   Resolving deltas:  80% (57671/72073)   Resolving deltas:  81% (58398/72073)   Resolving deltas:  82% (59105/72073)   Resolving deltas:  83% (60309/72073)   Resolving deltas:  84% (60574/72073)   Resolving deltas:  85% (61339/72073)   Resolving deltas:  86% (62134/72073)   Resolving deltas:  87% (62708/72073)   Resolving deltas:  88% (63574/72073)   Resolving deltas:  89% (64146/72073)   Resolving deltas:  90% (65174/72073)   Resolving deltas:  91% (66116/72073)   Resolving deltas:  92% (66325/72073)   Resolving deltas:  93% (67052/72073)   Resolving deltas:  94% (67755/72073)   Resolving deltas:  95% (68472/72073)   Resolving deltas:  96% (69196/72073)   Resolving deltas:  97% (69943/72073)   Resolving deltas:  98% (70681/72073)   Resolving deltas:  99% (71369/72073)   Resolving deltas: 100% (72073/72073)   Resolving deltas: 100% (72073/72073), done.
-From https://github.com/mxcl/homebrew
- * [new branch]      master     -> origin/master
- * [new branch]      gh-pages   -> origin/gh-pages
- * [new branch]      go         -> origin/go
- * [new branch]      superwip   -> origin/superwip
-[mNotice: /Stage[main]/Gcc/Package[boxen/brews/apple-gcc42]/ensure: created[0m
-[mNotice: /Stage[main]/Nginx/Package[boxen/brews/nginx]/ensure: created[0m
-[mNotice: /Stage[main]//Node[default]/Package[findutils]/ensure: created[0m
-[mNotice: /Stage[main]//Node[default]/Package[ack]/ensure: created[0m
-[mNotice: /Stage[main]//Node[default]/File[/Users/jcowhigjr/src/our-boxen]/ensure: created[0m
-[mNotice: /Stage[main]/Nginx/Service[com.boxen.nginx]: Triggered 'refresh' from 1 events[0m
-[mNotice: /Stage[main]//Node[default]/Package[gnu-tar]/ensure: created[0m
-[mNotice: /Stage[main]/Git/Package[boxen/brews/git]/ensure: created[0m
-[mNotice: /Stage[main]/Hub/Package[hub]/ensure: created[0m
-[mNotice: /Stage[main]/Boxen::Bin/File[/opt/boxen/bin/boxen]/ensure: created[0m
-[mNotice: /Stage[main]/Ruby/Exec[rbenv-setup-root-repo]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Ruby/File[/opt/boxen/rbenv/versions]/ensure: created[0m
-[mNotice: /Stage[main]/Ruby/File[/opt/boxen/rbenv/rbenv.d]/ensure: created[0m
-[mNotice: /Stage[main]/Ruby/File[/opt/boxen/rbenv/rbenv.d/install]/ensure: created[0m
-[mNotice: /Stage[main]/Ruby/File[/opt/boxen/rbenv/rbenv.d/install/00_try_to_download_ruby_version.bash]/ensure: defined content as '{md5}a420f72b64852232e2459287fe68c3cf'[0m
-[mNotice: /Stage[main]/Ruby/File[/opt/boxen/rbenv/shims]/ensure: created[0m
-[mNotice: /Stage[main]/Ruby/File[/opt/boxen/rbenv/plugins]/ensure: created[0m
-[mNotice: /Stage[main]/Ruby/Repository[/opt/boxen/rbenv/plugins/ruby-build]/ensure: created[0m
-[mNotice: /Stage[main]/Ruby::1-9-3-p231-tcs-github1/Ruby::Definition[1.9.3-p231-tcs-github1]/File[/opt/boxen/rbenv/plugins/ruby-build/share/ruby-build/1.9.3-p231-tcs-github1]/ensure: defined content as '{md5}d6aceb2781d00e2fb4dcd1d1c7e983b6'[0m
-[mNotice: /Stage[main]/Dnsmasq/Package[boxen/brews/dnsmasq]/ensure: created[0m
-[mNotice: /Stage[main]/Dnsmasq/Service[dev.dnsmasq]/ensure: ensure changed 'stopped' to 'running'[0m
-[mNotice: /Stage[main]/Dnsmasq/Service[dev.dnsmasq]: Triggered 'refresh' from 4 events[0m
-[mNotice: /Stage[main]/Ruby/Exec[rbenv-rehash-post-install]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Ruby::1-9-3-p231-tcs-github1/Ruby::Version[1.9.3-p231-tcs-github1]/Exec[ruby-install-1.9.3-p231-tcs-github1]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Ruby::1-9-3-p231-tcs-github1/Ruby::Version[1.9.3-p231-tcs-github1]/File[/opt/boxen/rbenv/version]/ensure: created[0m
-[mNotice: /Stage[main]/Ruby::1-8-7-p358/Ruby::Version[1.8.7-p358]/Exec[ruby-install-1.8.7-p358]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Ruby::1-9-3/File[/opt/boxen/rbenv/versions/1.9.3]/ensure: created[0m
-[mNotice: /Stage[main]/Ruby::1-9-2-p320/Ruby::Version[1.9.2-p320]/Exec[ruby-install-1.9.2-p320]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Ruby::1-8-7/File[/opt/boxen/rbenv/versions/1.8.7]/ensure: created[0m
-[mNotice: /Stage[main]/Nginx/File[/opt/boxen/config/nginx/nginx.conf]/ensure: defined content as '{md5}8b4c8c4da0290be0d5d6747c733ec28c'[0m
-[mNotice: /Stage[main]/Nginx/Service[dev.nginx]/ensure: ensure changed 'stopped' to 'running'[0m
-[mNotice: /Stage[main]/Nginx/Service[dev.nginx]: Triggered 'refresh' from 3 events[0m
-[mNotice: /Stage[main]/Ruby::1-9-2/File[/opt/boxen/rbenv/versions/1.9.2]/ensure: created[0m
-[mNotice: /Stage[main]/Nvm/Repository[/opt/boxen/nvm]/ensure: created[0m
-[mNotice: /Stage[main]/Nvm/File[/opt/boxen/nvm/alias]/ensure: created[0m
-[mNotice: /Stage[main]/Nodejs::0-6/Nodejs[0.6.20]/Exec[nvm-install-0.6.20]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Nodejs::0-6/File[/opt/boxen/nvm/alias/v0.6]/ensure: defined content as '{md5}3f67cb4a2c697389c08f7f739714b33b'[0m
-[mNotice: /Stage[main]/Nodejs::0-8/Nodejs[0.8.8]/Exec[nvm-install-0.8.8]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Nodejs::0-8/File[/opt/boxen/nvm/alias/v0.8]/ensure: defined content as '{md5}35ce5a993f13e4479234c555c8d72fe8'[0m
-[mNotice: /Stage[main]/Nodejs::0-4/Nodejs[0.4.10]/Exec[nvm-install-0.4.10]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Nodejs::0-4/File[/opt/boxen/nvm/alias/v0.4]/ensure: defined content as '{md5}38050ecc35fd35d182ee947a3d70893c'[0m
-[33m--> Source /opt/boxen/env.sh or restart your shell for new stuff![0m
+Can't run Puppet, fetching dependencies with librarian failed.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kscript/boxen-bootstrap[1m [0m[0m 
+]2;script/boxen-bootstrap]1;script/boxen-bootstrap[33mGem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
 
-[1m[7m%[27m[1m[0m                                                                                                                                                                                  ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K
+        /opt/boxen/rbenv/versions/1.8.7-p358/bin/ruby extconf.rb 
+checking for libxml/parser.h... no
+-----
+libxml2 is missing.  please visit http://nokogiri.org/tutorials/installing_nokogiri.html for help with installing dependencies.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of
+necessary libraries and/or headers.  Check the mkmf.log file for more
+details.  You may need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/opt/boxen/rbenv/versions/1.8.7-p358/bin/ruby
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-iconv-dir
+	--without-iconv-dir
+	--with-iconv-include
+	--without-iconv-include=${iconv-dir}/include
+	--with-iconv-lib
+	--without-iconv-lib=${iconv-dir}/lib
+	--with-xml2-dir
+	--without-xml2-dir
+	--with-xml2-include
+	--without-xml2-include=${xml2-dir}/include
+	--with-xml2-lib
+	--without-xml2-lib=${xml2-dir}/lib
+	--with-xslt-dir
+	--without-xslt-dir
+	--with-xslt-include
+	--without-xslt-include=${xslt-dir}/include
+	--with-xslt-lib
+	--without-xslt-lib=${xslt-dir}/lib
+	--with-libxslt-config
+	--without-libxslt-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-libxml-2.0-config
+	--without-libxml-2.0-config
+	--with-libiconv-config
+	--without-libiconv-config
+
+
+Gem files will remain installed in /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/nokogiri-1.5.6 for inspection.
+Results logged to /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/nokogiri-1.5.6/ext/nokogiri/gem_make.out
+[0m[31mAn error occurred while installing nokogiri (1.5.6), and Bundler cannot continue.
+Make sure that `gem install nokogiri -v '1.5.6'` succeeds before bundling.[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kbbimd;   b bundleinstall        install
+]2;bundle install]1;bundleFetching gem metadata from https://rubygems.org/......k.
+Fetching gem metadata from https://rubygems.org/..
+Using addressable (2.3.3) 
+Using ansi (1.4.3) 
+Using json (1.7.7) 
+Installing nokogiri (1.5.6) with native extensions 
+[33mGem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+        /opt/boxen/rbenv/versions/1.8.7-p358/bin/ruby extconf.rb 
+checking for libxml/parser.h... no
+-----
+libxml2 is missing.  please visit http://nokogiri.org/tutorials/installing_nokogiri.html for help with installing dependencies.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of
+necessary libraries and/or headers.  Check the mkmf.log file for more
+details.  You may need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/opt/boxen/rbenv/versions/1.8.7-p358/bin/ruby
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-iconv-dir
+	--without-iconv-dir
+	--with-iconv-include
+	--without-iconv-include=${iconv-dir}/include
+	--with-iconv-lib
+	--without-iconv-lib=${iconv-dir}/lib
+	--with-xml2-dir
+	--without-xml2-dir
+	--with-xml2-include
+	--without-xml2-include=${xml2-dir}/include
+	--with-xml2-lib
+	--without-xml2-lib=${xml2-dir}/lib
+	--with-xslt-dir
+	--without-xslt-dir
+	--with-xslt-include
+	--without-xslt-include=${xslt-dir}/include
+	--with-xslt-lib
+	--without-xslt-lib=${xslt-dir}/lib
+	--with-libxslt-config
+	--without-libxslt-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-libxml-2.0-config
+	--without-libxml-2.0-config
+	--with-libiconv-config
+	--without-libiconv-config
+
+
+Gem files will remain installed in /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/nokogiri-1.5.6 for inspection.
+Results logged to /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/nokogiri-1.5.6/ext/nokogiri/gem_make.out
+[0m[31mAn error occurred while installing nokogiri (1.5.6), and Bundler cannot continue.
+Make sure that `gem install nokogiri -v '1.5.6'` succeeds before bundling.[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kk bbundle update
+]2;bundle update]1;bundleFetching gem metadata from https://rubygems.org/.........
+Fetching gem metadata from https://rubygems.org/..
+Using addressable (2.3.3) 
+Using ansi (1.4.3) 
+Using json (1.7.7) 
+Installing nokogiri (1.5.6) with native extensions 
+[33mGem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
+
+        /opt/boxen/rbenv/versions/1.8.7-p358/bin/ruby extconf.rb 
+checking for libxml/parser.h... no
+-----
+libxml2 is missing.  please visit http://nokogiri.org/tutorials/installing_nokogiri.html for help with installing dependencies.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of
+necessary libraries and/or headers.  Check the mkmf.log file for more
+details.  You may need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/opt/boxen/rbenv/versions/1.8.7-p358/bin/ruby
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-iconv-dir
+	--without-iconv-dir
+	--with-iconv-include
+	--without-iconv-include=${iconv-dir}/include
+	--with-iconv-lib
+	--without-iconv-lib=${iconv-dir}/lib
+	--with-xml2-dir
+	--without-xml2-dir
+	--with-xml2-include
+	--without-xml2-include=${xml2-dir}/include
+	--with-xml2-lib
+	--without-xml2-lib=${xml2-dir}/lib
+	--with-xslt-dir
+	--without-xslt-dir
+	--with-xslt-include
+	--without-xslt-include=${xslt-dir}/include
+	--with-xslt-lib
+	--without-xslt-lib=${xslt-dir}/lib
+	--with-libxslt-config
+	--without-libxslt-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-libxml-2.0-config
+	--without-libxml-2.0-config
+	--with-libiconv-config
+	--without-libiconv-config
+
+
+Gem files will remain installed in /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/nokogiri-1.5.6 for inspection.
+Results logged to /Users/jcowhigjr/src/my-boxen/.bundle/ruby/1.8/gems/nokogiri-1.5.6/ext/nokogiri/gem_make.out
+[0m[31mAn error occurred while installing nokogiri (1.5.6), and Bundler cannot continue.
+Make sure that `gem install nokogiri -v '1.5.6'` succeeds before bundling.[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Krrubhy  y --version
+]2;ruby --version]1;rubyruby 1.8.7 (2012-02-08 patchlevel 358) [i686-darwin12.2.0]
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Ke ruby --version[14Dbundle update 
+]2;bundle update]1;bundleFetching gem metadata from https://rubygems.org/.........
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using addressable (2.3.3) 
+Using ansi (1.4.3) 
+Using json (1.7.7) 
+Installing nokogiri (1.5.6) with native extensions 
+Installing uuidtools (2.1.3) 
+Installing aws-sdk (1.8.3.1) 
+Using hiera (1.0.0) 
+Using highline (1.6.15) 
+Using json_pure (1.7.7) 
+Using thor (0.17.0) 
+Using librarian-puppet (0.9.8) 
+Installing multipart-post (1.2.0) 
+Installing faraday (0.8.6) 
+Using faraday_middleware (0.9.0) 
+Using hashie (1.2.0) 
+Using multi_json (1.6.1) 
+Using netrc (0.7.7) 
+Using octokit (1.23.0) 
+Using facter (1.6.17) 
+Using puppet (3.1.0) 
+Using boxen (1.0.1) 
+Installing builder (3.2.0) 
+Installing net-ssh (2.6.5) 
+Using open4 (1.3.0) 
+Installing trollop (2.0) 
+Installing rbvmomi (1.6.0) 
+Using bundler (1.2.4) 
+Updating files in vendor/cache
+  * aws-sdk-1.8.3.1.gem
+  * multipart-post-1.2.0.gem
+  * faraday-0.8.6.gem
+  * builder-3.2.0.gem
+Removing outdated .gem files from vendor/cache
+  * aws-sdk-1.8.3.gem
+  * builder-3.1.4.gem
+  * faraday-0.8.5.gem
+  * multipart-post-1.1.5.gem
+[32mYour bundle is updated! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kbundle update[13Druby --version[14Dbundle update install[14Dscript/boxen-bootstrap
+]2;script/boxen-bootstrap]1;script/boxen-bootstrap[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kscript/boxen-bootstrap          
+]2;script/boxen]1;script/boxenBoxen has a dirty tree, won't auto-update!
+[31mCould not find addressable-2.3.3 in any of the sources[0m
+[33mRun `bundle install` to install missing gems.[0m
+Can't run Puppet, fetching dependencies with librarian failed.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kscript/boxen-bootstrap
+]2;script/boxen-bootstrap]1;script/boxen-bootstrap[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kscript/boxen-bootstrap[10D          [10D-bootstrap[22Dbundle update         [9D      updateinstall--version[9Dinstall  exec rails console[11Dke db:seed [10Dils console[11Dke db:seed migrate[13Dils console  [11Dke db:seed [10Dils console[11Dke db:seed [10Dils console[11Dke db:seed [10Dils consoledbconsole[20Dinstall             [13Dexec rails dbconsole       :console[10Dconsole   [11Dke db:seed [10Dils console[18Dinstall           [11Dexec heroku releases[15Drails console  [11Dke db:seed [10Dils console[18Dinstall | grep hirb[11D           [12Dexec rails console[18Dinstall awesomeprint[12Dfancy_irb   [17Dexec rails console[13Dconsole      rake db:seed --trace       [8D[10Dils db:seedconsole[13Dconsole      rails console[18Dupdate            [12Dinstall --no-deployment[23Dupdate                 [17D[13D             [13Dsscs  wwhich java
+]2;which java]1;which/usr/bin/java
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keexit  e  nnpm
+]2;npm]1;npm
+Usage: npm <command>
+
+where <command> is one of:
+    add-user, adduser, apihelp, author, bin, bugs, c, cache,
+    completion, config, ddp, dedupe, deprecate, docs, edit,
+    explore, faq, find, find-dupes, get, help, help-search,
+    home, i, info, init, install, isntall, issues, la, link,
+    list, ll, ln, login, ls, outdated, owner, pack, prefix,
+    prune, publish, r, rb, rebuild, remove, restart, rm, root,
+    run-script, s, se, search, set, show, shrinkwrap, star,
+    stars, start, stop, submodule, tag, test, tst, un,
+    uninstall, unlink, unpublish, unstar, up, update, version,
+    view, whoami
+
+npm <cmd> -h     quick help on <cmd>
+npm -l           display full usage info
+npm faq          commonly asked questions
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    /Users/jcowhigjr/.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@1.2.11 /Users/jcowhigjr/nvm/v0.8.20/lib/node_modules/npm
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Knnvm
+]2;nvm]1;nvm
+Node Version Manager
+
+Usage:
+    nvm help                    Show this message
+    nvm install [-s] <version>  Download and install a <version>
+    nvm uninstall <version>     Uninstall a version
+    nvm use <version>           Modify PATH to use <version>
+    nvm run <version> [<args>]  Run <version> with <args> as arguments
+    nvm ls                      List installed versions
+    nvm ls <version>            List versions matching a given description
+    nvm ls-remote               List remote versions available for install
+    nvm deactivate              Undo effects of NVM on current shell
+    nvm alias [<pattern>]       Show all aliases beginning with <pattern>
+    nvm alias <name> <version>  Set an alias named <name> pointing to <version>
+    nvm unalias <name>          Deletes the alias named <name>
+    nvm copy-packages <version> Install global NPM packages contained in <version> to current version
+
+Example:
+    nvm install v0.4.12         Install a specific version number
+    nvm use 0.2                 Use the latest available 0.2.x release
+    nvm run 0.4.12 myApp.js     Run myApp.js using node v0.4.12
+    nvm alias default 0.4       Auto use the latest installed v0.4.x version
+
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Ks eexit  e  ttit
+[J[0mtitanium  [Jtitle   [J[A[0m[27m[24m[27Ctit[Kanium[1m [0m[0m 
+[J]2;titanium]1;titanium[1m[36mTitanium Command-Line Interface[39m[22m, CLI version 3.0.24, Titanium SDK version 3.0.2.GA
+Copyright (c) 2012-2013, Appcelerator, Inc.  All Rights Reserved.
+
+Please report bugs to [36mhttp://jira.appcelerator.org/[39m
+
+Usage: [36mtitanium <command> [options][39m
+
+Commands:
+   [36mbuild  [39m   builds a project
+   [36mclean  [39m   removes previous build directories
+   [36mconfig [39m   get and set config options
+   [36mcreate [39m   creates a new mobile application or module
+   [36mhelp   [39m   displays this help screen
+   [36minfo   [39m   display development environment information
+   [36mlogin  [39m   logs into the Appcelerator network
+   [36mlogout [39m   logs out of the Appcelerator network
+   [36mmodule [39m   manages installed Titanium Modules
+   [36mplugin [39m   manages installed Titanium Plugins
+   [36mproject[39m   get and set tiapp.xml settings
+   [36msdk    [39m   manages installed Titanium SDKs
+   [36msetup  [39m   run the setup wizard
+   [36mstatus [39m   displays session information
+ 
+Global Flags:
+   [36m--banner, --no-banner[39m   displays Titanium version banner [90m [default: true][39m
+   [36m--colors, --no-colors[39m   use colors in the terminal [90m [default: true][39m
+   [36m-h, --help           [39m   displays help [90m[39m
+   [36m--prompt, --no-prompt[39m   prompt for missing options [90m [default: true][39m
+   [36m-q, --quiet          [39m   suppress all output [90m [default: false][39m
+   [36m-v, --version        [39m   displays the current version [90m[39m
+ 
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Ktitanium ==v   00  --version
+]2;titanium --version]1;titanium3.0.24
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kjjava --version
+]2;java --version]1;javaUnrecognized option: --version
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kjjavae  --help
+]2;java --help]1;javaUnrecognized option: --help
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kjjavea  a
+]2;java]1;javaUsage: java [-options] class [args...]
+           (to execute a class)
+   or  java [-options] -jar jarfile [args...]
+           (to execute a jar file)
+where options include:
+    -d32	  use a 32-bit data model if available
+    -d64	  use a 64-bit data model if available
+    -server	  to select the "server" VM
+                  The default VM is server,
+                  because you are running on a server-class machine.
+
+
+    -cp <class search path of directories and zip/jar files>
+    -classpath <class search path of directories and zip/jar files>
+                  A : separated list of directories, JAR archives,
+                  and ZIP archives to search for class files.
+    -D<name>=<value>
+                  set a system property
+    -verbose:[class|gc|jni]
+                  enable verbose output
+    -version      print product version and exit
+    -version:<value>
+                  require the specified version to run
+    -showversion  print product version and continue
+    -jre-restrict-search | -no-jre-restrict-search
+                  include/exclude user private JREs in the version search
+    -? -help      print this help message
+    -X            print help on non-standard options
+    -ea[:<packagename>...|:<classname>]
+    -enableassertions[:<packagename>...|:<classname>]
+                  enable assertions with specified granularity
+    -da[:<packagename>...|:<classname>]
+    -disableassertions[:<packagename>...|:<classname>]
+                  disable assertions with specified granularity
+    -esa | -enablesystemassertions
+                  enable system assertions
+    -dsa | -disablesystemassertions
+                  disable system assertions
+    -agentlib:<libname>[=<options>]
+                  load native agent library <libname>, e.g. -agentlib:hprof
+                  see also, -agentlib:jdwp=help and -agentlib:hprof=help
+    -agentpath:<pathname>[=<options>]
+                  load native agent library by full pathname
+    -javaagent:<jarpath>[=<options>]
+                  load Java programming language agent, see java.lang.instrument
+    -splash:<imagepath>
+                  show splash screen with specified image
+See http://www.oracle.com/technetwork/java/javase/documentation/index.html for more details.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kjjava -version
+]2;java -version]1;javajava version "1.7.0_10-ea"
+Java(TM) SE Runtime Environment (build 1.7.0_10-ea-b07)
+Java HotSpot(TM) 64-Bit Server VM (build 23.6-b02, mixed mode)
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kttita  t  nnpm- -  -version
+]2;npm -version]1;npm1.2.11
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kggit status
+]2;hub status]1;git# On branch master
+# Your branch is ahead of 'upstream/master' by 18 commits.
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	[32mmodified:   .ruby-version[m
+#	[32mmodified:   Gemfile.lock[m
+#	[32mmodified:   typescript[m
+#	[32mdeleted:    vendor/cache/aws-sdk-1.8.3.gem[m
+#	[32mdeleted:    vendor/cache/builder-3.1.4.gem[m
+#	[32mdeleted:    vendor/cache/faraday-0.8.5.gem[m
+#	[32mdeleted:    vendor/cache/multipart-post-1.1.5.gem[m
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	[36mvendor/cache/aws-sdk-1.8.3.1.gem[m
+#	[36mvendor/cache/builder-3.2.0.gem[m
+#	[36mvendor/cache/faraday-0.8.6.gem[m
+#	[36mvendor/cache/multipart-post-1.2.0.gem[m
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;jcowhigjr@Johns-MacBook-Pro: ~/src/my-boxen]1;~/src/my-boxen[0m[27m[24m[J[01;31m➜ [01;32m [36mmy-boxen [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kggit a
