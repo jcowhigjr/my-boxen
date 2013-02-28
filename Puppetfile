@@ -16,7 +16,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "1.0.2"
+github "boxen", "1.0.3"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -37,33 +37,8 @@ github "sudo",     "1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 #
-#github "mongodb", "1.0.0"
-github "watts",  "1.0.0"
-github "vlc" ,  "1.0.0"
-github "things" ,  "1.0.0"
-github "spotify" ,  "1.0.0"
-github "skype" ,  "1.0.0"
-github "propane" ,  "1.0.0"
-github "istatmenus3" ,  "1.0.0"
-github "flux" ,  "1.0.0"
-github "airfoil" ,  "1.0.0"
-github "istatmenus4",  "1.0.0"
-github "hipchat", "1.0.0", :repo => "chaoranxie/puppet-hipchat"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "dnsmasq",  "1.0.0"
-github "gcc",      "1.0.0"
-github "git",      "1.0.0"
-github "homebrew", "1.0.0"
-github "hub",      "1.0.0"
-github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
-github "nginx",    "1.0.0"
-github "nodejs",   "1.0.0"
-github "nvm",      "1.0.0"
-github "ruby",     "1.0.0"
-github "stdlib",   "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
-github "sudo",     "1.0.0"
-github "iterm2",	"1.0.0"
 # add following rule below
-github "textmate", "1.1.0", :repo => "AquaGeek/puppet-textmate2"
+#github "textmate", "1.1.0", :repo => "AquaGeek/puppet-textmate2"

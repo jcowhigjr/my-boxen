@@ -77,8 +77,7 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar',
-      'htop'
+      'gnu-tar'
     ]:
   }
 
