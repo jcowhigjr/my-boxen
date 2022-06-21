@@ -1,3 +1,7 @@
+Archiving this project -- not maintained 
+
+Replaced by github strap and Brewfile
+
 # Our Boxen
 
 This is a template Boxen project designed for your organization to fork and
